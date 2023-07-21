@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header img {
+    width: 25vw;
+  }
+  
+  .container {
+    /* Define a imagem de fundo */
+    background-image: url('../src/images/fundo.png');
+    /* Define que a imagem de fundo ocupe toda a tela */
+    background-size: cover;
+    /* Define que a imagem de fundo fique centralizada */
+    background-position: center;
+    /* Define que a imagem de fundo não se repita */
+    background-repeat: no-repeat;
+    /* Define uma altura mínima para garantir o preenchimento total da página */
+    min-height: 100%;
+  }
+  
