@@ -3,20 +3,75 @@
 
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>league of legends</title>
 </head>
 
 <body>
-    <div class="container">
+    <header class="cabecalho">
+        <img class="logo" src="src/images/lol-logo.png" alt="logo-LOL">
+    </header>
 
-        <header>
-            <img id="logo" src="src/images/lol-logo.png">
-        </header>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem</h1>
+            <ul class="lista-de-personagens">
 
-        <section></section>
-    </div>
+                <li class="personagem selecionado" id="yasuo" data-name="Yasuo" data-description="Yasuo é um espadachim habilidoso que viveu em uma remota aldeia Ioniana chamada Tempestade. Ele foi acusado injustamente de matar seu mestre, Elder Souma, e foi forçado a fugir para provar sua inocência. Enquanto estava em fuga, uma forte tempestade o atingiu, da qual ele acredita ter sido enviada pelo espírito de Elder Souma como um sinal de perdão.">
+                    <img src="src/images/personagem/banner/yasuo-banner.jpg" alt="yasuo-banner">
+            </li>
+
+                <li class="personagem" id="Akali" data-name="Akali" data-description="Akali é uma assassina altamente treinada e uma orgulhosa membra do clã Kinkou, uma organização que busca equilibrar as sombras e a luz em Ionia. Ela foi treinada por seu mestre Shen, o Olho do Crepúsculo, para ser uma guardiã habilidosa e defender sua terra contra as trevas do Vazio. No entanto, ela acaba se rebelando contra a tradição de seu clã, buscando um caminho próprio e mais agressivo para lidar com os inimigos de Ionia.">
+                    <img src="src/images/personagem/banner/Akali-banner.png" alt="Akali-banner">
+                </li>
+
+                <li class="personagem" id="Jhin" data-name="jhin" data-description="Jhin é um psicopata artístico e meticuloso, um assassino serial que persegue sua arte através da morte. Ele é obcecado por beleza e perfeição, e usa suas habilidades únicas de atirador para matar suas vítimas de forma teatral e elaborada. Jhin vê cada assassinato como uma obra de arte e marca suas cenas de crime com um número quatro, que tem significado especial para ele.">
+                    <img src="src/images/personagem/banner/Jhin-banner.png" alt="Jhin-banner">
+                </li>
+
+                <li class="personagem" id="Kayn" data-name="Kayn" data-description="Kayn é um jovem lutador de Noxus que tem uma arma poderosa chamada Rhaast, uma foice sombria que possui uma consciência maligna. Ele é perseguido por ela e busca controlar seu poder para se tornar um guerreiro supremo, podendo assumir duas formas: a de Kayn Sombra da Foice ou Kayn Ceifador da Esperança. A escolha depende das ações do jogador ao longo da partida.">
+                    <img src="src/images/personagem/banner/Kayn-Banner.png" alt="Kayn-Banner">
+                </li>
+
+                <li class="personagem" id="Shen" data-name="Shen" data-description="Shen, o Olho do Crepúsculo, é um ninja ioniano e o líder atual dos Kinkou. Ele é um defensor do equilíbrio e da justiça, protegendo sua terra natal e perseguindo ameaças com maestria. Shen é conhecido por sua habilidade única de se teleportar para proteger seus aliados em perigo, tornando-o um valioso tanque e suporte para a equipe.">
+                    <img src="src/images/personagem/banner/shen-banner.png" alt="shen-banner">
+                </li>
+
+                <li class="personagem" id="Zed" data-name="Zed" data-description="Zed é um poderoso ninja de Noxus e ex-membro dos Kinkou. Ele foi discípulo de Shen, mas se desviou do caminho correto e se voltou para as artes das sombras proibidas. Agora, como Mestre das Sombras, ele comanda uma ordem secreta conhecida como a Ordem da Sombra. Zed busca vingança contra Shen e o Kinkou por tê-lo exilado.">
+                    <img src="src/images/personagem/banner/zed-Banner.png" alt="zed-Banner">
+                </li>
+                
+                <li class="personagem" id="Irelia" data-name="Irelia" data-description="Irelia, a Dançarina das Lâminas, é uma guerreira de Ionia que utiliza suas lâminas flutuantes com maestria. Ela é uma defensora ferrenha de sua terra natal e luta contra os invasores Noxianos. Sua história é marcada por tragédia, pois sua família foi morta durante a invasão de Ionia. Ela lidera a resistência para proteger sua cultura e seu povo.">
+                    <img src="src/images/personagem/banner/irelia-banner.png" alt="irelia-banner">
+                </li>
+                
+                <li class="personagem" id="yone" data-name="yone" data-description="Yone é o meio-irmão mais velho de Yasuo. Ele também era um espadachim talentoso, mas foi morto por Yasuo em um duelo acalorado. Porém, Yone retorna como um espírito vingativo conhecido como A Lâmina Desperta. Ele carrega uma espada espiritual que pode prender e derrotar os espíritos malignos. Yone busca redenção e reconciliação com seu passado e seu irmão.">
+                    <img src="src/images/personagem/banner/Yone-banner.png" alt="yone-banner">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/images/personagem/pose/yasuo-pose.png"
+                alt="personagem-selecionado">
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">yasuo</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Yasuo é um espadachim habilidoso que viveu
+                    em uma remota aldeia Ioniana chamada Tempestade. Ele foi acusado injustamente de matar seu
+                    mestre, Elder Souma, e foi forçado a fugir para provar sua inocência. Enquanto estava em fuga,
+                    uma forte tempestade o atingiu, da qual ele acredita ter sido enviada pelo espírito de Elder
+                    Souma como um sinal de perdão.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script/index.js"></script>
 </body>
 
 </html>
